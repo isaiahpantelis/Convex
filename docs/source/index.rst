@@ -8,3 +8,5 @@ Convex Analysis and Optimisation
 
 .. toctree::
    :maxdepth: 2
+
+   topology
