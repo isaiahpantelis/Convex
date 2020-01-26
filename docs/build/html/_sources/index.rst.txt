@@ -10,3 +10,4 @@ Convex Analysis and Optimisation
    :maxdepth: 2
 
    topology
+   references

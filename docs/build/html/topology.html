@@ -1,205 +1,152 @@
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Topology &mdash; Convex Analysis and Optimisation  documentation</title>
-  
 
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>General Topology &#8212; Convex Analysis and Optimisation  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Convex Analysis and Optimisation" href="index.html" /> 
-</head>
-
-<body class="wy-body-for-nav">
-
+    <link rel="next" title="References" href="references.html" />
+    <link rel="prev" title="Convex Analysis and Optimisation" href="index.html" />
    
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
           
 
-          
-            <a href="index.html" class="icon icon-home"> Convex Analysis and Optimisation
-          
-
-          
-          </a>
-
-          
+          <div class="body" role="main">
             
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+  <div class="section" id="general-topology">
+<h1>General Topology<a class="headerlink" href="#general-topology" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="topological-spaces">
+<h2>Topological spaces<a class="headerlink" href="#topological-spaces" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="references.html#eda2"><span class="std std-ref">[EDA2, Chapter XII, Section 1]</span></a></p>
+<p>A <strong>topology</strong> on a set <span class="math notranslate nohighlight">\(X\)</span> is a set <span class="math notranslate nohighlight">\(\tau\)</span> of
+subsets of <span class="math notranslate nohighlight">\(E\)</span> <a class="footnote-reference brackets" href="#def-top-subset-power-set" id="id1">1</a> that satisfies the following
+conditions:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(E\in\tau\)</span></p></li>
+<li><p>If <span class="math notranslate nohighlight">\((A_\lambda)_{\lambda\in L}\)</span> is a family of subsets of <span class="math notranslate nohighlight">\(X\)</span>
+such that <span class="math notranslate nohighlight">\(A_\lambda\in\tau\)</span>, <span class="math notranslate nohighlight">\(\forall\lambda\in L\)</span>,
+then <span class="math notranslate nohighlight">\(\bigcup_{\lambda\in L}A_\lambda\in\tau\)</span>.
+<a class="footnote-reference brackets" href="#def-top-index-set" id="id2">2</a></p></li>
+<li><p>If <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are elements of <span class="math notranslate nohighlight">\(\tau\)</span>, then
+<span class="math notranslate nohighlight">\(A\cap B\in\tau\)</span>.</p></li>
+</ol>
+<p>A <strong>topological space</strong> is an ordered pair <span class="math notranslate nohighlight">\((X,\tau)\)</span> where <span class="math notranslate nohighlight">\(X\)</span> is
+a set and <span class="math notranslate nohighlight">\(\tau\)</span> is a topology on <span class="math notranslate nohighlight">\(X\)</span>. Given a topological space
+<span class="math notranslate nohighlight">\((X,\tau)\)</span>, by slight abuse of terminology the set <span class="math notranslate nohighlight">\(X\)</span> itself is
+also called a topological space.  The elements of <span class="math notranslate nohighlight">\(\tau\)</span> are the <strong>open
+sets</strong> of the topological space <span class="math notranslate nohighlight">\(X\)</span>.</p>
+<p>It follows from the second property for <span class="math notranslate nohighlight">\(L=\emptyset\)</span> that
+<span class="math notranslate nohighlight">\(\emptyset\in\tau\)</span>. That is, the empty set is an open set.</p>
+<p>From the last property, it follows by induction that if
+<span class="math notranslate nohighlight">\((A_k)_{k=1}^K\)</span> is a <em>finite</em> family of elements of <span class="math notranslate nohighlight">\(\tau\)</span>, then
+<span class="math notranslate nohighlight">\(\bigcap_{k=1}^K A_k\in\tau\)</span>.</p>
+<p>A topology on a set <span class="math notranslate nohighlight">\(X\)</span> is, therefore, a collection of subsets of
+<span class="math notranslate nohighlight">\(X\)</span> that contains <span class="math notranslate nohighlight">\(X\)</span> itself and is closed under arbitrary unions
+and countable intersections.</p>
+<hr class="docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="def-top-subset-power-set"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>In other words, <span class="math notranslate nohighlight">\(\mathfrak{D}\)</span> is a subset
+of <span class="math notranslate nohighlight">\(\mathfrak{P}(X)\)</span></p>
+</dd>
+<dt class="label" id="def-top-index-set"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>The index set <span class="math notranslate nohighlight">\(L\)</span> is not necessarily countable
+and it can be empty.</p>
+</dd>
+</dl>
+</div>
 </div>
 
+
+          </div>
           
         </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Convex Analysis and Optimisation</a></h1>
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Topology</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#compactifications-of-the-real-line">Compactifications of the real line</a></li>
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">General Topology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#topological-spaces">Topological spaces</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
-            
-          
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Convex Analysis and Optimisation</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>Topology</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            <a href="_sources/topology.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Convex Analysis and Optimisation</a></li>
+      <li>Next: <a href="references.html" title="next chapter">References</a></li>
+  </ul></li>
+</ul>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="topology">
-<h1>Topology<a class="headerlink" href="#topology" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="compactifications-of-the-real-line">
-<h2>Compactifications of the real line<a class="headerlink" href="#compactifications-of-the-real-line" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
-
-
-           </div>
-           
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="index.html" class="btn btn-neutral float-left" title="Convex Analysis and Optimisation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
     </div>
-  
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
 
-  <hr/>
 
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2020, Pantelis Isaiah
 
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
-</footer>
+
+
+
 
         </div>
       </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pantelis Isaiah.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/topology.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
 
-    </section>
-
-  </div>
-  
-
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
     
-   
 
-</body>
+    
+  </body>
 </html>
